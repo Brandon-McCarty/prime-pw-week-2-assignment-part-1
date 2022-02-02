@@ -56,13 +56,13 @@ if (luckyNumber == 2 && adventurous) {
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
-if (pets <= allowedPets) {
+if (pets < allowedPets) {
     console.log( 'I can have more pets!');
 } 
-else if (pets = allowedPets){
+else if (pets == allowedPets){
     console.log( 'I have enough pets' );
 }
-else if (pets >= allowedPets){
+else if (pets > allowedPets){
     console.log( 'Oh no, I have too many pets!' );
 } // end pets
     
@@ -74,11 +74,15 @@ else if (pets >= allowedPets){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.    
 let mostPets;
-if (pets >= friendsPets) {
+if (pets > friendsPets) {
         mostPets = pets;
 }
-else if (friendsPets >= pets){
+else if (pets < friendsPets) {
         mostPets = friendsPets;
+}
+else if (pets == friendsPets) {
+        mostPets = pets
+
 } // end mostPets
 console.log(mostPets);
 // 17 - Write a *switch* statement that logs:
